@@ -29,6 +29,11 @@ html {
     -webkit-tap-highlight-color: transparent;
 }
 
+button {
+    cursor: pointer;
+    transition: var(--transition);
+}
+
 header {
     display: flex;
     flex-direction: row;
@@ -116,12 +121,105 @@ menu button {
 .carousel {
     display: flex;
     flex-direction: row;
-    width: 400vw;
+    width: 100vw;
     height: 35vh;
-    overflow: hidden;
+    overflow-x: hidden;
+    scrollbar-width: none;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
 }
 
 .shoe-img {
     width: 100vw;
+    height: 35vh;
     object-fit: cover;
+}
+
+.carousel-container button {
+    position: absolute;
+    background-color: var(--clr-white);
+    border: none;
+    border-radius: 50%;
+    height: 10vw;
+    width: 10vw;
+    align-items: center;
+    justify-content: center;
+}
+
+.prev-btn {
+    top: 50vw;
+    left: 6vw;
+    padding: 1vw 1vw 0vw 0vw;
+}
+
+.next-btn {
+    top: 50vw;
+    right: 6vw;
+    padding: 1vw 0vw 0vw 1vw;
+}
+
+.text {
+    margin: 0vw 6vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.company {
+    color: var(--clr-orange);
+    text-transform: uppercase;
+    font-size: 0.9em;
+    margin: 6vw 0vw 4vw 0vw;
+    font-weight: 700;
+}
+
+.name {
+    color: var(--clr-very-dark-blue);
+    margin: 0vw;
+    line-height: 1.2;
+    font-weight: 700;
+    font-size: 1.75em;
+}
+
+.description {
+    margin: 4vw 0vw;
+    font-size: 0.9em;
+    line-height: 1.6;
+    color: var(
+    --clr-dark-grayish-blue)
+}
+
+.price {
+    margin: 4vw 6vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.current {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.pay {
+    font-size: 1.6em;
+    color: var(--clr-very-dark-blue);
+    font-weight: 700;
+}
+
+.discount {
+    margin: 0vw 0vw 0vw 4vw;
+    padding: 1vw 2vw;
+    background-color: var(--clr-pale-orange);
+    border-radius: 2vw;
+    color: var(--clr-orange);
+    font-weight: 700;
+}
+
+.former {
+    font-weight: 700;
+    font-size: 1em;
+    color: var(--clr-dark-grayish-blue);
+    text-decoration: line-through;
 }
