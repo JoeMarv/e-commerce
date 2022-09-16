@@ -59,3 +59,23 @@ btns.forEach(function(btn) {
         counter.textContent = count
     })
 })
+
+
+// ADD TO CART
+const addBtn = document.querySelector('.add-btn')
+const cartNumber = document.querySelector('.cart-number')
+
+addBtn.addEventListener('click', function() {
+    cartNumber.textContent = counter.textContent
+
+    if(cartNumber.textContent == 0) {
+        cartNumber.classList.remove('show-number')
+    }
+
+    else{
+        cartNumber.classList.add('show-number')
+    }
+})
+
+
+//CART CONTENTS

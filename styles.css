@@ -99,6 +99,10 @@ menu button {
     padding: 3vw 0vw 3vw 6vw
 }
 
+.menu-content:focus {
+    background-color: var(--clr-light-grayish-blue);
+}
+
 .menu-options {
     display: flex;
     flex-direction: column;
@@ -113,6 +117,24 @@ menu button {
     display: flex;
     flex-direction: row;
     align-items: center;
+}
+
+.cart-number {
+    position: absolute;
+    color: var(--clr-white);
+    background-color: var(--clr-orange);
+    font-family: var(--ff);
+    font-weight: 700;
+    font-size: 0.7em;
+    width: 5vw;
+    text-align: center;
+    border-radius: 2vw;
+    margin: -6vw 0vw 0vw 6vw;
+    display: none;
+}
+
+.show-number {
+    display: block;
 }
 
 .pfp img {
@@ -185,8 +207,7 @@ menu button {
     margin: 4vw 0vw;
     font-size: 0.9em;
     line-height: 1.6;
-    color: var(
-    --clr-dark-grayish-blue)
+    color: var(--clr-dark-grayish-blue)
 }
 
 .price {
