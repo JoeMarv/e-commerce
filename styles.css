@@ -112,3 +112,16 @@ menu button {
     width: 6vw;
     height: auto;
 }
+
+.carousel {
+    display: flex;
+    flex-direction: row;
+    width: 400vw;
+    height: 35vh;
+    overflow: hidden;
+}
+
+.shoe-img {
+    width: 100vw;
+    object-fit: cover;
+}
