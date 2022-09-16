@@ -52,6 +52,7 @@ header button {
     margin: 0vw 2vw;
 }
 
+/* MENU START */
 menu {
     position: fixed;
     display: flex;
@@ -64,7 +65,7 @@ menu {
     top: 0;
     left: 0;
     transition: var(--transition);
-    /* transform: translate(-100%); */
+    display: none;
 }
 
 .menu-contents {
@@ -84,13 +85,22 @@ menu button {
 }
 
 .close-btn {
+    margin: 2vw 0vw 8vw 2vw;
+}
 
+.menu-content {
+    padding: 3vw 0vw 3vw 6vw
 }
 
 .menu-options {
     display: flex;
     flex-direction: column;
 }
+
+.open {
+    display: flex;
+}
+/* MENU END */
 
 .cart-pfp {
     display: flex;
