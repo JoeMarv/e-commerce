@@ -16,13 +16,16 @@ closeBtn.addEventListener('click', function() {
 const prevBtn = document.querySelector('.prev-btn')
 const nextBtn = document.querySelector('.next-btn')
 const slides = document.querySelectorAll('.slide')
+const carousel = document.querySelector('.carousel')
 
 slides.forEach(function(slide) {
+    const slideWidth = slide.clientWidth
+
     nextBtn.addEventListener('click', function() {
-        slide.style.transform = 'translate(100vw)'
+        carousel.scrollLeft += slideWidth
     })
 
     prevBtn.addEventListener('click', function() {
-        slide.style.transform = 'translate(-100vw)'
+        carousel.scrollLeft -= slideWidth
     })
 })

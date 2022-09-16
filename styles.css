@@ -69,10 +69,10 @@ menu {
     margin: 0vw;
     padding: 0vw;
     top: 0;
-    left: 0;
+    left: -2vw;
     transition: var(--transition);
     display: none;
-    z-index: 3;
+    z-index: 100;
 }
 
 .menu-contents {
@@ -126,8 +126,6 @@ menu button {
     width: 100vw;
     height: 35vh;
     overflow-x: hidden;
-    scrollbar-width: none;
-    scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
 }
 
