@@ -6,7 +6,7 @@
     --clr-very-dark-blue: hsl(220, 13%, 13%);
     --clr-dark-grayish-blue: hsl(219, 9%, 45%);
     --clr-grayish-blue: hsl(220, 14%, 75%);
-    --light-grayish-blue: hsl(223, 64%, 98%);
+    --clr-light-grayish-blue: hsl(223, 64%, 98%);
     --clr-white: hsl(0, 0%, 100%);
     --clr-lightbox-bg: rgba(0,0,0,0.75);
     --ff: 'Kumbh Sans', sans-serif;
@@ -223,4 +223,64 @@ menu button {
     font-size: 1em;
     color: var(--clr-dark-grayish-blue);
     text-decoration: line-through;
+}
+
+.quantity {
+    display: flex;
+    flex-direction: column;
+}
+
+.counter button {
+    border: none;
+    background-color: inherit;
+}
+
+.counter {
+    display: flex;
+    flex-direction: row;
+    width: 88vw;
+    margin: 4vw 6vw;
+    background-color: var(--clr-light-grayish-blue);
+    border-radius: 2vw;
+}
+
+.minus {
+    padding: 4vw 6vw;
+    border-radius: 2vw;
+}
+
+.number {
+    width: 57vw; 
+    align-items: center;
+    justify-content: center;
+    padding: 4vw 0vw;
+    text-align: center;
+    color: var(--clr-very-dark-blue);
+    font-size: 1.2em;
+    font-weight: 700;
+}
+
+.plus {
+    padding: 4vw 6vw;
+    border-radius: 2vw;
+}
+
+.add-btn {
+    background-color: var(--clr-orange);
+    color: var(--clr-white);
+    border: none;
+    display: flex;
+    flex-direction: row;
+    margin: 2vw 6vw;
+    border-radius: 2vw;
+    justify-content: center;
+    padding: 4vw 0vw;
+    font-family: var(--ff);
+    font-weight: 700;
+    font-size: 1em;
+}
+
+.add-btn img {
+    filter: brightness(100);
+    margin: 0vw 4vw 0vw 0vw;
 }

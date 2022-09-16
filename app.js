@@ -29,3 +29,33 @@ slides.forEach(function(slide) {
         carousel.scrollLeft -= slideWidth
     })
 })
+
+
+//COUNTER
+const btns = document.querySelectorAll('.counter-btn')
+const counter = document.querySelector('.item-number')
+
+let count = 0
+btns.forEach(function(btn) {
+    btn.addEventListener('click', function(e) {
+        const styles = e.currentTarget.classList
+
+        if(styles.contains('minus')) {
+            count--
+        }
+
+        else if(styles.contains('plus')) {
+            count++
+        }
+
+        else {
+            count = 0
+        }
+
+        if(count < 0) {
+            count = 0
+        } 
+
+        counter.textContent = count
+    })
+})
