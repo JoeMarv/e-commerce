@@ -21,10 +21,35 @@
 
     <div class="cart-pfp">
       <div class="cart">
-        <button><img src="images/icon-cart.svg" alt="cart-logo"></button>
+        <button class="cart-btn"><img src="images/icon-cart.svg" alt="cart-logo"></button>
       </div>
 
       <div class="cart-number"></div>
+
+      <div class="cart-contents">
+        <h2 class="cart-header">Cart</h2>
+
+        <div class="cart-empty">
+          <span>Your cart is empty.</span>
+        </div>
+
+        <div class="cart-filled">
+          <div class="cart-item">
+            <img src="images/image-product-1-thumbnail.jpg" alt="cart-item-image" class="cart-item-image">
+            
+            <div class="cart-item-text">
+              <span class="cart-item-header">Autumn Limited Edition...</span>
+              <div class="cart-item-price">
+                <span>$125.00 x <span class="qty"></span> <span class="qty-price"></span></span>
+              </div>
+            </div>
+
+            <button class="remove-btn"><img src="images/icon-delete.svg" alt="remove-icon"></button>
+          </div>
+
+          <button class="checkout-btn">Checkout</button>
+        </div>
+      </div>
 
       <div class="pfp">
         <button><img src="images/image-avatar.png" alt="pfp-image"></button>
