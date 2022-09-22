@@ -15,6 +15,11 @@ const cartContainer = document.querySelector('.cart-contents')
 const removeBtn = document.querySelector('.remove-btn')
 const qty = document.querySelector('.qty')
 const qtyPrice = document.querySelector('.qty-price')
+const thumbnails = document.querySelectorAll('.img-btn')
+const one = document.querySelector('.one')
+const two = document.querySelector('.two')
+const three = document.querySelector('.three')
+const four = document.querySelector('.four')
 
 
 // MENU TOGGLERS
@@ -98,3 +103,41 @@ removeBtn.addEventListener('click', function() {
 
     console.log(counter);
 })
+
+
+// IMAGE BUTTONS EVENT LISTENERS
+thumbnails.forEach(function(thumbnail) {
+    thumbnail.addEventListener('click', function() {
+        thumbnails.forEach(function(item) {
+            if (item !== thumbnail) {
+                item.classList.remove('active')
+            }
+        })
+
+        thumbnail.classList.add('active')
+    })
+})
+
+
+thumbnails.forEach(function(btn) {
+    btn.addEventListener('click', function() {
+        if (one.classList.contains('active'))  {
+            carousel.innerHTML = `<img src="images/image-product-1.jpg" alt="product-1" class="shoe-img">`
+        }
+
+        else if (two.classList.contains('active'))  {
+            carousel.innerHTML = `<img src="images/image-product-2.jpg" alt="product-2" class="shoe-img">`
+        }
+
+        else if (three.classList.contains('active'))  {
+            carousel.innerHTML = `<img src="images/image-product-3.jpg" alt="product-3" class="shoe-img">`
+        }
+
+        else {
+            carousel.innerHTML = `<img src="images/image-product-4.jpg" alt="product-4" class="shoe-img">`
+        }
+    })
+})
+
+
+
